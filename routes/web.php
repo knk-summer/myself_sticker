@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopPageController;
 use App\Http\Controllers\NamePageController;
 use App\Http\Controllers\StickerPageController;
-
+use App\Http\Controllers\ResultPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +20,5 @@ use App\Http\Controllers\StickerPageController;
 Route::get('/',  [TopPageController::class, 'show']);
 Route::get('/name',  [NamePageController::class, 'show']);
 Route::get('/sticker',  [StickerPageController::class, 'show']);
+Route::get('/sticker',  [ResultPageController::class, 'show']);
 
