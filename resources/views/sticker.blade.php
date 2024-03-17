@@ -16,7 +16,7 @@
     <div class="contents">
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div>
-      <div class="explanation_txt"><p>&#9313;四隅に属性ステッカーを貼ります</p></div>
+      <div class="explanation_txt">&#9313;四隅に属性ステッカーを貼ります</div>
       <form action="#" method="post">
       <h2>あなたの属性を選択してください</h2>
       <div class="selectbox">
@@ -43,7 +43,7 @@
             <option value = "ダミー">ダミー</option>
         </select>
         </div>
-        <p><button type="button">出来上がりを見る</button>
+        <p><button type="button" class="btn">出来上がりを見る</button>
       </form>
       <button class="btn">前の画面に戻る</button>
     </div>

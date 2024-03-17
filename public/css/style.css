@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   text-align: center;
 }
-.container {
+.container{
   width: 560px;
   height: calc(100vh - 120px);
   position: fixed;
@@ -21,6 +21,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .contents {
   width: 75%;
@@ -43,14 +45,16 @@ body {
 }
 .explanation_txt{
   margin-bottom: 40px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 h2{
-  font-size: 1.1em;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .small_txt{
-  font-size: 0.9em;
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 .headcopy {
   margin-bottom: 40px;
@@ -63,7 +67,7 @@ button {
   /*  letter-spacing: 2px;*/
   width: 300px;
   height: 50px;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #000;
 	background: #fff;
@@ -75,13 +79,28 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   display: block;
-  margin: 0 auto 5% auto;
+  margin: 0 auto;
 }
+
+.btn{
+  margin-bottom: 5%;
+}
+
 .start_btn {
   width: 320px;
   height: 60px;
   font-size: 1.5em;
-  margin: 0 auto;
+}
+
+.result{
+  width: 100%;
+}
+.result_img img{
+  width: 100%;
+}
+.largeimg_explanation_txt{
+  margin-top: 2%;
+  margin-bottom: 6%;
 }
 
 @media screen and (max-width:600px) {

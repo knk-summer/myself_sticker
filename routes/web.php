@@ -20,5 +20,5 @@ use App\Http\Controllers\ResultPageController;
 Route::get('/',  [TopPageController::class, 'show']);
 Route::get('/name',  [NamePageController::class, 'show']);
 Route::get('/sticker',  [StickerPageController::class, 'show']);
-Route::get('/sticker',  [ResultPageController::class, 'show']);
+Route::get('/result',  [ResultPageController::class, 'show']);
 

@@ -20,7 +20,7 @@
       <form action="#" method="post">
       <h2>あなたの名前を入力してください。</br><span class="small_txt">(上限14文字まで)</span></h2>
         <p><input type="text" name="name"></p>
-        <p><button type="button">次へ</button>
+        <p><button type="button" class="btn">次へ</button>
       </form>
       <button class="btn">前の画面に戻る</button>
     </div>
