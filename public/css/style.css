@@ -38,13 +38,13 @@ body {
   margin: 0 auto 10% auto;
 }
 .mv img{
-  margin: 40px auto;
+  margin: 10% auto;
 }
 .explanation_img img{
-  margin: 0px auto 10px auto;
+  margin: 0px auto 3% auto;
 }
 .explanation_txt{
-  margin-bottom: 40px;
+  margin-bottom: 10%;
   font-size: 1rem;
 }
 h2{
@@ -57,7 +57,7 @@ h2{
   line-height: 1.2rem;
 }
 .headcopy {
-  margin-bottom: 40px;
+  margin-bottom: 10%;
   line-height: 1.5;
 }
 /* .process_txt{
@@ -83,7 +83,10 @@ button {
 }
 
 .btn{
-  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.next_btn{
+  margin-top: 10%;
 }
 
 .start_btn {
@@ -91,7 +94,28 @@ button {
   height: 60px;
   font-size: 1.5em;
 }
+.name_form p{
+  
+  width: 100%;
+}
 
+.name_form {
+  width: 80%;
+  margin-top: 3%;
+  padding: 8px 10px;
+  border: 1px solid #969da3;
+  border-radius: 3px;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.name_form::placeholder {
+  color: #999;
+}
+.selectbox{
+  margin-top: 3%;
+}
 .result{
   width: 100%;
 }

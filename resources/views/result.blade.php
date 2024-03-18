@@ -17,10 +17,10 @@
       <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="result_img"><img src="{{ asset('img/result.png') }}" alt="仮"></div>
       <div class="explanation_txt">あなたのネームプレートはこちら！</div>
-      <button class="largeimg_btn">拡大して見る</button>
+      <button class="next_btn">拡大して見る</button>
       <div class="largeimg_explanation_txt"><span class="small_txt">スマートフォンでご覧の方は横持ちにすることで、<br>より大きく表示できます。</span></div>
       <button class="btn">画像をDLする</button>
-      <button class="btn">前の画面に戻る</button>
+      <button class="btn" onclick="history.back()">前の画面に戻る</button>
     </div>
   </div>
 </div>

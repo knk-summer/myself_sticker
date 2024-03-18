@@ -43,9 +43,9 @@
             <option value = "ダミー">ダミー</option>
         </select>
         </div>
-        <p><button type="button" class="btn">出来上がりを見る</button>
+        <p><button type="button" class="next_btn" onclick="location.href='/result'">出来上がりを見る</button>
       </form>
-      <button class="btn">前の画面に戻る</button>
+      <button class="btn" onclick="history.back()">前の画面に戻る</button>
     </div>
   </div>
 </div>

@@ -22,7 +22,7 @@
         ここにはヘッドコピーが入ります。<br>
         ここにはヘッドコピーが入ります。<br>
         ここにはヘッドコピーが入ります。</h2>
-      <button class="start_btn">はじめる</button>
+      <button class="start_btn" onclick="location.href='/name'">はじめる</button>
     </div>
   </div>
 </div>
