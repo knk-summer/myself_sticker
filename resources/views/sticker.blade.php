@@ -14,10 +14,16 @@
 <div class="wrap">
   <div class="container">
     <div class="contents">
+      <?php
+      var_dump($user_name);
+      echo mb_strlen($user_name);
+      ?>
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div>
       <div class="explanation_txt">&#9313;四隅に属性ステッカーを貼ります</div>
-      <form action="#" method="post">
+      <form action="/result" method="post">
+      @csrf
+      <!-- CSRF対策 -->
       <h2>あなたの属性を選択してください</h2>
       <div class="selectbox">
       (1)
@@ -43,7 +49,8 @@
             <option value = "ダミー">ダミー</option>
         </select>
         </div>
-        <p><button type="button" class="next_btn" onclick="location.href='/result'">出来上がりを見る</button>
+        <input type="hidden" name="name" value="<?php echo $user_name ?>">
+        <button type="submit" class="next_btn">出来上がりを見る</button>
       </form>
       <button class="btn" onclick="history.back()">前の画面に戻る</button>
     </div>

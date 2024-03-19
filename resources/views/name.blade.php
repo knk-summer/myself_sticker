@@ -17,10 +17,13 @@
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div>
       <div class="explanation_txt"><p>&#9312;中央に名前を配置します</p></div>
-      <form action="#" method="post" class="form">
+      <form action="/sticker" method="post" class="form">
+      @csrf
+      <!-- CSRF対策 -->
       <h2>あなたの名前を入力してください。</br><span class="small_txt">(上限14文字まで)</span></h2>
         <p><input type="text" name="name" class="name_form" placeholder="name"/></p>
-        <p><button type="button" class="next_btn" onclick="location.href='/sticker'">次へ</button>
+        <p><button type="submit" class="next_btn">次へ</button>
+        <!-- type=buttonにすると値が送られないので注意 -->
       </form>
       <button class="btn" onclick="history.back()">前の画面に戻る</button>
     </div>
