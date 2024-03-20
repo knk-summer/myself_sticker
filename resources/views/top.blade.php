@@ -15,14 +15,17 @@
   <div class="container">
     <div class="contents">
       <h1 class="logo"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <div class="mv"><img src="{{ asset('img/main.png') }}" alt="仮"></div>
-      <h2 class="headcopy">ここにはヘッドコピーが入ります。<br>
-        ここにはヘッドコピーが入ります。<br>
-        ここにはヘッドコピーが入ります。<br>
-        ここにはヘッドコピーが入ります。<br>
-        ここにはヘッドコピーが入ります。<br>
-        ここにはヘッドコピーが入ります。</h2>
-      <button class="start_btn" onclick="location.href='/name'">はじめる</button>
+      <div class="mv"><img src="{{ asset('img/main.gif') }}" alt="仮"></div>
+      <h2 class="headcopy">例えば、初めましての時<br>
+        例えば、お久しぶりですの時<br>
+        話し始めの一言目に困ることはありませんか？<br>
+        そんな時のための名札生成ツール<br>
+        「じぶんステッカー」です。<br>
+        属性ステッカーを貼ることで<br>
+        その人の好きなものを可視化します。<br>
+        ぜひ話のタネにしてください！<br>
+      </h2>
+      <button class="start_btn" onclick="location.href='/name' ">はじめる</button>
     </div>
   </div>
 </div>

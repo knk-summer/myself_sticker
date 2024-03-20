@@ -21,6 +21,5 @@ use App\Http\Controllers\ImageController;
 Route::get('/',  [TopPageController::class, 'show'])->name('top.show');
 Route::get('/name',  [NamePageController::class, 'show'])->name('name.show');
 Route::match(['get','post'],'/sticker',  [StickerPageController::class, 'show'])->name('sticker.show');
-// Route::match(['get','post'],'/result',  [ResultPageController::class, 'show'])->name('result.show');
 Route::post('/result',  [ResultPageController::class, 'img'])->name('result.show');
 

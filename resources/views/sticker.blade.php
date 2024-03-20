@@ -14,22 +14,18 @@
 <div class="wrap">
   <div class="container">
     <div class="contents">
-      <?php
-      var_dump($user_name);
-      echo mb_strlen($user_name);
-      ?>
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div>
+      <!-- <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div> -->
       <div class="explanation_txt">&#9313;四隅に属性ステッカーを貼ります</div>
       <form action="/result" method="post">
-      @csrf
       <!-- CSRF対策 -->
+      @csrf
       <h2>あなたの属性を選択してください</h2>
       <div class="selectbox">
       (1)
       <select name="style_upperleft">
       <option value = "simple_">シンプル</option>
-      <option value = "yurutto_">ゆるめ</option>
+      <option value = "yurume_">ゆるめ</option>
       <option value = "chottochic_">ちょっとシック</option>
       </select>
       な
@@ -46,7 +42,7 @@
       (2)
       <select name="style_upperright">
       <option value = "simple_">シンプル</option>
-      <option value = "yurutto_">ゆるめ</option>
+      <option value = "yurume_">ゆるめ</option>
       <option value = "chottochic_">ちょっとシック</option>
       </select>
       な
@@ -63,7 +59,7 @@
       (3)
       <select name="style_lowerleft">
       <option value = "simple_">シンプル</option>
-      <option value = "yurutto_">ゆるめ</option>
+      <option value = "yurume_">ゆるめ</option>
       <option value = "chottochic_">ちょっとシック</option>
       </select>
       な
@@ -80,7 +76,7 @@
       (4)
       <select name="style_lowerright">
       <option value = "simple_">シンプル</option>
-      <option value = "yurutto_">ゆるめ</option>
+      <option value = "yurume_">ゆるめ</option>
       <option value = "chottochic_">ちょっとシック</option>
       </select>
       な

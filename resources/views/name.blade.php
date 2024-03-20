@@ -15,11 +15,11 @@
   <div class="container">
     <div class="contents">
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div>
+      <!-- <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div> -->
       <div class="explanation_txt"><p>&#9312;中央に名前を配置します</p></div>
       <form action="/sticker" method="post" class="form">
-      @csrf
       <!-- CSRF対策 -->
+      @csrf
       <h2>あなたの名前を入力してください。</br><span class="small_txt">(上限14文字まで)</span></h2>
         <p><input type="text" name="name" class="name_form" placeholder="name"/></p>
         <p><button type="submit" class="next_btn">次へ</button>
