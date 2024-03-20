@@ -30,9 +30,9 @@
       </select>
       な
       <select name="sticker_upperleft">
-        <option value = "like_dogs">犬好き</option>
+        <option value = "like_dogs" selected>犬好き</option>
         <option value = "like_cats">猫好き</option>
-        <option value = "like_game" selected>ゲーム好き</option>
+        <option value = "like_game">ゲーム好き</option>
         <option value = "like_coffee">コーヒー派</option>
         <option value = "like_tea">紅茶派</option>
         <option value = "my_fave">推し活中</option>
