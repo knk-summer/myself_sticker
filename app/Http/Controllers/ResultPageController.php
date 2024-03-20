@@ -4,6 +4,7 @@ use App\Http\Controllers\Controller;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use Intervention\Image\ImageManagerStatic as Image;
+use Illuminate\Support\Facades\Hash;
 
 class ResultPageController extends Controller {
 
@@ -12,12 +13,12 @@ class ResultPageController extends Controller {
         $user_name = $_POST['name'];
         $style_upperleft = $_POST['style_upperleft'];
         $sticker_upperleft = $_POST['sticker_upperleft'];
-        $style_upperleft = $_POST['style_upperright'];
-        $sticker_upperleft = $_POST['sticker_upperright'];
-        $style_upperleft = $_POST['style_lowerleft'];
-        $sticker_upperleft = $_POST['sticker_lowerleft'];
-        $style_upperleft = $_POST['style_lowerright'];
-        $sticker_upperleft = $_POST['sticker_lowerright'];
+        $style_upperright = $_POST['style_upperright'];
+        $sticker_upperright = $_POST['sticker_upperright'];
+        $style_lowerleft = $_POST['style_lowerleft'];
+        $sticker_lowerleft = $_POST['sticker_lowerleft'];
+        $style_lowerright = $_POST['style_lowerright'];
+        $sticker_lowerright = $_POST['sticker_lowerright'];
 
         // マネージャー インスタンスを作成する
         $manager = new ImageManager(new Driver());
@@ -36,12 +37,20 @@ class ResultPageController extends Controller {
 
     // $sticker_upperleft = $manager->read(public_path('img/nameplate_bg.gif'));
     $img_sticker_upperleft = $manager->read(public_path('img/'.$style_upperleft.$sticker_upperleft.'.png'));
-    $img->insert($img_sticker_upperleft);
+    $img->place($img_sticker_upperleft,'top-left',20,20,);
+    $img_sticker_upperright = $manager->read(public_path('img/'.$style_upperright.$sticker_upperright.'.png'));
+    $img->place($img_sticker_upperright,'top-right',20,20,);
+    $img_sticker_lowerleft = $manager->read(public_path('img/'.$style_lowerleft.$sticker_lowerleft.'.png'));
+    $img->place($img_sticker_lowerleft,'bottom-left',20,20,);
+    $img_sticker_lowerright = $manager->read(public_path('img/'.$style_lowerright.$sticker_lowerright.'.png'));
+    $img->place($img_sticker_lowerright,'bottom-right',20,20,);
 
 
         // $img->save(storage_path('img/hoge-flip.png'));
-        $img_name = $user_name.'.png';
-        $img->save('img/'.$img_name);
+        $hash_user_name = Hash::make($user_name);
+        // 画像名をハッシュ化
+        $img_name = $hash_user_name.'.png';
+        $img->save(public_path('img/'.$img_name));
 
         return view('result',['img_name' => 'img/'.$img_name,'style_upperleft' => $style_upperleft,'sticker_upperleft' => $sticker_upperleft]);
     }
