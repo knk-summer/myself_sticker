@@ -15,13 +15,13 @@
   <div class="container">
     <div class="contents result">
     <?php
-      var_dump($user_name);
-      echo mb_strlen($user_name);
+      var_dump($img_name);
+      var_dump($style_upperleft);
       var_dump($sticker_upperleft);
-      echo mb_strlen($sticker_upperleft);
+      // echo $style_upperleft.$sticker_upperleft;
       ?>
       <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <div class="result_img"><img src="{{ asset('img/result.png') }}" alt="仮"></div>
+      <div class="result_img"><img src="{{ asset($img_name) }}" alt="仮"></div>
       <div class="explanation_txt">あなたのネームプレートはこちら！</div>
       <button class="next_btn">拡大して見る</button>
       <div class="largeimg_explanation_txt"><span class="small_txt">スマートフォンでご覧の方は横持ちにすることで、<br>より大きく表示できます。</span></div>

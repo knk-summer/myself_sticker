@@ -5,6 +5,7 @@ use App\Http\Controllers\TopPageController;
 use App\Http\Controllers\NamePageController;
 use App\Http\Controllers\StickerPageController;
 use App\Http\Controllers\ResultPageController;
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,6 @@ use App\Http\Controllers\ResultPageController;
 Route::get('/',  [TopPageController::class, 'show'])->name('top.show');
 Route::get('/name',  [NamePageController::class, 'show'])->name('name.show');
 Route::match(['get','post'],'/sticker',  [StickerPageController::class, 'show'])->name('sticker.show');
-Route::match(['get','post'],'/result',  [ResultPageController::class, 'show'])->name('result.show');
+// Route::match(['get','post'],'/result',  [ResultPageController::class, 'show'])->name('result.show');
+Route::post('/result',  [ResultPageController::class, 'img'])->name('result.show');
 
