@@ -27,28 +27,120 @@
       <h2>あなたの属性を選択してください</h2>
       <div class="selectbox">
       (1)
-        <select name="sticker">
-            <option value = "ダミー">ダミー</option>
-        </select>
-        </div>
-        <div class="selectbox">
+      <select name="style_upperleft">
+      <option value = "シンプル">シンプル</option>
+      <option value = "キラキラ">キラキラ</option>
+      <option value = "ポップ">ポップ</option>
+      <option value = "シック">シック</option>
+      </select>
+      な
+      <select name="sticker_upperleft">
+        <option value = "犬好き">犬好き</option>
+        <option value = "猫好き">猫好き</option>
+        <option value = "音楽好き">音楽好き</option>
+        <option value = "ゲーム好き">ゲーム好き</option>
+        <option value = "コーヒー派">コーヒー派</option>
+        <option value = "紅茶派">紅茶派</option>
+        <option value = "推し活中">推し活中</option>
+        <option value = "カメラ好き">カメラ好き</option>
+        <option value = "本好き">本好き</option>
+        <option value = "裁縫好き">裁縫好き</option>
+        <option value = "コスメ好き">コスメ好き</option>
+        <option value = "甘いもの好き">甘いもの好き</option>
+        <option value = "辛いもの好き">辛いもの好き</option>
+        <option value = "旅好き">旅好き</option>
+        <option value = "お酒好き">お酒好き</option>
+        <option value = "飲み会好き">飲み会好き</option>
+        <option value = "植物好き">植物好き</option>
+      </select>
+      </div>
+      <div class="selectbox">
       (2)
-        <select name="sticker">
-            <option value = "ダミー">ダミー</option>
-        </select>
-        </div>
-        <div class="selectbox">
+      <select name="style_upperright">
+      <option value = "シンプル">シンプル</option>
+      <option value = "キラキラ">キラキラ</option>
+      <option value = "ポップ">ポップ</option>
+      <option value = "シック">シック</option>
+      </select>
+      な
+      <select name="sticker_upperright">
+        <option value = "犬好き">犬好き</option>
+        <option value = "猫好き">猫好き</option>
+        <option value = "音楽好き">音楽好き</option>
+        <option value = "ゲーム好き">ゲーム好き</option>
+        <option value = "コーヒー派">コーヒー派</option>
+        <option value = "紅茶派">紅茶派</option>
+        <option value = "推し活中">推し活中</option>
+        <option value = "カメラ好き">カメラ好き</option>
+        <option value = "本好き">本好き</option>
+        <option value = "裁縫好き">裁縫好き</option>
+        <option value = "コスメ好き">コスメ好き</option>
+        <option value = "甘いもの好き">甘いもの好き</option>
+        <option value = "辛いもの好き">辛いもの好き</option>
+        <option value = "旅好き">旅好き</option>
+        <option value = "お酒好き">お酒好き</option>
+        <option value = "飲み会好き">飲み会好き</option>
+        <option value = "植物好き">植物好き</option>
+      </select>
+      </div>
+      <div class="selectbox">
       (3)
-        <select name="sticker">
-            <option value = "ダミー">ダミー</option>
-        </select>
-        </div>
-        <div class="selectbox">
+      <select name="style_lowerleft">
+      <option value = "シンプル">シンプル</option>
+      <option value = "キラキラ">キラキラ</option>
+      <option value = "ポップ">ポップ</option>
+      <option value = "シック">シック</option>
+      </select>
+      な
+      <select name="sticker_lowerleft">
+        <option value = "犬好き">犬好き</option>
+        <option value = "猫好き">猫好き</option>
+        <option value = "音楽好き">音楽好き</option>
+        <option value = "ゲーム好き">ゲーム好き</option>
+        <option value = "コーヒー派">コーヒー派</option>
+        <option value = "紅茶派">紅茶派</option>
+        <option value = "推し活中">推し活中</option>
+        <option value = "カメラ好き">カメラ好き</option>
+        <option value = "本好き">本好き</option>
+        <option value = "裁縫好き">裁縫好き</option>
+        <option value = "コスメ好き">コスメ好き</option>
+        <option value = "甘いもの好き">甘いもの好き</option>
+        <option value = "辛いもの好き">辛いもの好き</option>
+        <option value = "旅好き">旅好き</option>
+        <option value = "お酒好き">お酒好き</option>
+        <option value = "飲み会好き">飲み会好き</option>
+        <option value = "植物好き">植物好き</option>
+      </select>
+      </div>
+      <div class="selectbox">
       (4)
-        <select name="sticker">
-            <option value = "ダミー">ダミー</option>
-        </select>
-        </div>
+      <select name="style_lowerright">
+      <option value = "シンプル">シンプル</option>
+      <option value = "キラキラ">キラキラ</option>
+      <option value = "ポップ">ポップ</option>
+      <option value = "シック">シック</option>
+      </select>
+      な
+      <select name="sticker_lowerright">
+        <option value = "犬好き">犬好き</option>
+        <option value = "猫好き">猫好き</option>
+        <option value = "音楽好き">音楽好き</option>
+        <option value = "ゲーム好き">ゲーム好き</option>
+        <option value = "コーヒー派">コーヒー派</option>
+        <option value = "紅茶派">紅茶派</option>
+        <option value = "推し活中">推し活中</option>
+        <option value = "カメラ好き">カメラ好き</option>
+        <option value = "本好き">本好き</option>
+        <option value = "裁縫好き">裁縫好き</option>
+        <option value = "コスメ好き">コスメ好き</option>
+        <option value = "甘いもの好き">甘いもの好き</option>
+        <option value = "辛いもの好き">辛いもの好き</option>
+        <option value = "旅好き">旅好き</option>
+        <option value = "お酒好き">お酒好き</option>
+        <option value = "飲み会好き">飲み会好き</option>
+        <option value = "植物好き">植物好き</option>
+      </select>
+      </div>
         <input type="hidden" name="name" value="<?php echo $user_name ?>">
         <button type="submit" class="next_btn">出来上がりを見る</button>
       </form>

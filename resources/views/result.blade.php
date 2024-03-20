@@ -14,6 +14,12 @@
 <div class="wrap">
   <div class="container">
     <div class="contents result">
+    <?php
+      var_dump($user_name);
+      echo mb_strlen($user_name);
+      var_dump($sticker_upperleft);
+      echo mb_strlen($sticker_upperleft);
+      ?>
       <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="result_img"><img src="{{ asset('img/result.png') }}" alt="仮"></div>
       <div class="explanation_txt">あなたのネームプレートはこちら！</div>
