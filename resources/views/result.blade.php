@@ -15,9 +15,6 @@
   <div class="container">
     <div class="contents result">
     <?php
-      var_dump($img_name);
-      var_dump($style_upperleft);
-      var_dump($sticker_upperleft);
       ?>
       <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
       <div class="result_img"><img src="{{ asset($img_name) }}" alt="仮"></div>
