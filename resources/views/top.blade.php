@@ -15,7 +15,7 @@
   <div class="container">
     <div class="contents">
       <h1 class="logo"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <div class="mv"><img src="{{ asset('img/main.gif') }}" alt="仮"></div>
+      <div class="mv"><img src="{{ asset('img/main.gif') }}" alt="メイン画像"></div>
       <h2 class="headcopy">例えば、初めましての時<br>
         例えば、お久しぶりですの時<br>
         話し始めの一言目に困ることはありませんか？<br>

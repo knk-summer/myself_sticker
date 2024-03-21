@@ -36,13 +36,13 @@ class ResultPageController extends Controller {
         
         // ステッカー画像の読み込みと配置
         $img_sticker_upperleft = $manager->read(public_path('img/'.$style_upperleft.$sticker_upperleft.'.gif'));
-        $img->place($img_sticker_upperleft,'top-left',20,20,);
+        $img->place($img_sticker_upperleft,'top-left',50,30,);
         $img_sticker_upperright = $manager->read(public_path('img/'.$style_upperright.$sticker_upperright.'.gif'));
-        $img->place($img_sticker_upperright,'top-right',20,20,);
+        $img->place($img_sticker_upperright,'top-right',30,30,);
         $img_sticker_lowerleft = $manager->read(public_path('img/'.$style_lowerleft.$sticker_lowerleft.'.gif'));
-        $img->place($img_sticker_lowerleft,'bottom-left',20,20,);
+        $img->place($img_sticker_lowerleft,'bottom-left',40,40,);
         $img_sticker_lowerright = $manager->read(public_path('img/'.$style_lowerright.$sticker_lowerright.'.gif'));
-        $img->place($img_sticker_lowerright,'bottom-right',20,20,);
+        $img->place($img_sticker_lowerright,'bottom-right',30,50,);
 
         // uuidを生成して画像名に
         $hash_user_name = Str::uuid();

@@ -15,7 +15,7 @@
   <div class="container">
     <div class="contents">
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <!-- <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div> -->
+    <div class="explanation_img"><img src="{{ asset('img/sticker_explanation.gif') }}" alt="属性選択＿説明画像"></div>
       <div class="explanation_txt">&#9313;四隅に属性ステッカーを貼ります</div>
       <form action="/result" method="post">
       <!-- CSRF対策 -->

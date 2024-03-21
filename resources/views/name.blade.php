@@ -15,7 +15,7 @@
   <div class="container">
     <div class="contents">
     <h1 class="logo_small"><img src="{{ asset('img/logo.gif') }}" alt="じぶんステッカー"></h1>
-      <!-- <div class="explanation_img"><img src="{{ asset('img/name.png') }}" alt="仮"></div> -->
+    <div class="explanation_img"><img src="{{ asset('img/name_explanation.gif') }}" alt="名前入力＿説明画像"></div>
       <div class="explanation_txt"><p>&#9312;中央に名前を配置します</p></div>
       <form action="/sticker" method="post" class="form">
       <!-- CSRF対策 -->
