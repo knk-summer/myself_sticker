@@ -4,7 +4,8 @@ use App\Http\Controllers\Controller;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use Intervention\Image\ImageManagerStatic as Image;
-use Illuminate\Support\Facades\Hash;
+// use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class ResultPageController extends Controller {
 
@@ -44,7 +45,8 @@ class ResultPageController extends Controller {
         $img->place($img_sticker_lowerright,'bottom-right',20,20,);
 
         // 画像名をハッシュ化
-        $hash_user_name = Hash::make($user_name);
+        $hash_user_name = Str::uuid();
+        // $hash_user_name = Hash::make($user_name);
         $img_name = $hash_user_name.'.gif';
         $img->save(public_path('img/'.$img_name));
 
