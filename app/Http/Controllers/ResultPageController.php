@@ -44,7 +44,7 @@ class ResultPageController extends Controller {
         $img_sticker_lowerright = $manager->read(public_path('img/'.$style_lowerright.$sticker_lowerright.'.gif'));
         $img->place($img_sticker_lowerright,'bottom-right',20,20,);
 
-        // 画像名をハッシュ化
+        // uuidを生成して画像名に
         $hash_user_name = Str::uuid();
         // $hash_user_name = Hash::make($user_name);
         $img_name = $hash_user_name.'.gif';
